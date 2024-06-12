@@ -10,6 +10,19 @@
     <h1>Ucapan Ulang Tahun</h1>
     <p id="ucapan"></p>
 
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var nama = localStorage.getItem('nama');
+            var tglLahir = new Date(localStorage.getItem('tglLahir'));
+            var today = new Date();
+
+            var ucapanElement = document.getElementById('ucapan');
+            if (tglLahir.getDate() === today.getDate() && tglLahir.getMonth() === today.getMonth()) {
+                ucapanElement.textContent = 'Happy Birthday, ' + nama + '!';
+            } else {
+                ucapanElement.textContent = 'Not todayyy :<, ' + nama + '!';
+            }
+        });
+    </script>
 </body>
 </html>

@@ -7,10 +7,21 @@
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <h1>What's ur birthday?</h1>
+    <h1>What's ur Birthday?</h1>
     <input type="date" id="tglLahir">
-    <a href="crosscheck-tanggal.html" onclick="return validasiTanggal()">Next</a>
+    <a href="crosscheck-tanggal.html" onclick="return simpanTanggal()">Next</a>
 
-    <script src="script.js"></script>
+    <script>
+        function simpanTanggal() {
+            var tglLahir = document.getElementById('tglLahir').value;
+            if (tglLahir) {
+                localStorage.setItem('tglLahir', tglLahir);
+                return true;
+            } else {
+                alert('U harus isi dongggg :<');
+                return false; 
+            }
+        }
+    </script>
 </body>
 </html>

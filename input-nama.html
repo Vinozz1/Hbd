@@ -9,8 +9,19 @@
 <body>
     <h1>What's ur name?</h1>
     <input type="text" id="nama" placeholder="Nama">
-    <a href="input-tanggal.html" onclick="return validasiNama()">Next</a>
+    <a href="input-tanggal.html" onclick="return simpanNama()">Next</a>
 
-    <script src="script.js"></script>
+    <script>
+        function simpanNama() {
+            var nama = document.getElementById('nama').value;
+            if (nama) {
+                localStorage.setItem('nama', nama);
+                return true; // Proceed to the next page
+            } else {
+                alert('Nama tidak boleh kosong');
+                return false; // Prevent moving to the next page
+            }
+        }
+    </script>
 </body>
 </html>

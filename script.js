@@ -2,7 +2,6 @@ function next() {
     var nama = document.getElementById('nama').value;
     localStorage.setItem('nama', nama);
 
-    // Mengambil nama halaman saat ini dan menentukan halaman selanjutnya
     var currentPage = window.location.pathname.split('/').pop();
     var nextPage = '';
 
@@ -12,7 +11,6 @@ function next() {
         nextPage = 'crosscheck-tanggal.html';
     }
 
-    // Berpindah ke halaman selanjutnya
     if (nextPage !== '') {
         window.location.href = nextPage;
     }

@@ -1,8 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url('◌\ \ _\ ࣪\ Jungwon\ lockscreen\'s\ 𓇻\ \ ݁.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -12,21 +15,23 @@ body {
 }
 
 h1 {
-    color: #333;
-    font-size: 6vw; 
+    color: #fff; /* Ganti warna teks agar kontras dengan wallpaper */
+    font-size: 6vw;
     margin-bottom: 20px;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan teks untuk meningkatkan keterbacaan */
 }
 
 input[type="text"],
 input[type="date"] {
-    width: 80vw; 
-    max-width: 400px; 
+    width: 80vw;
+    max-width: 400px;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1.2em; 
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.8); /* Buat input semi-transparan */
 }
 
 a {
@@ -36,20 +41,21 @@ a {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.2em; 
+    font-size: 1.2em;
     transition: background-color 0.3s ease;
     text-align: center;
-    width: 80vw; 
-    max-width: 400px; 
+    width: 80vw;
+    max-width: 400px;
+    background-color: rgba(0, 123, 255, 0.8); /* Buat tombol semi-transparan */
 }
 
 a:hover {
-    background-color: #0056b3;
+    background-color: rgba(0, 86, 179, 0.8);
 }
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 8vw; 
+        font-size: 8vw;
     }
 
     input[type="text"],
@@ -61,12 +67,12 @@ a:hover {
 
 @media (min-width: 1200px) {
     h1 {
-        font-size: 3vw; 
+        font-size: 3vw;
     }
 
     input[type="text"],
     input[type="date"],
     a {
-        width: 50vw; 
+        width: 50vw;
     }
 }

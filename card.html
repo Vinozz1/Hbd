@@ -32,10 +32,8 @@
     </div>
 
     <script>
-        // Retrieve the name from local storage
         var nama = localStorage.getItem('nama');
         if (nama) {
-            // Inject the name into the appropriate elements
             document.getElementById('nama-header').innerText = nama;
             document.getElementById('nama-content').innerText = nama;
         }

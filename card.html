@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTOFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>I want to say to you that</h1>
+        <div class="card">
+            <div class="imgBox">
+                <div class="bark"></div>
+                <img src="images/3.jpeg" alt="">
+            </div>
+
+            <div class="details">
+                <h4 class="color1">Happy Birthday</h4>
+                <h4 class="color2 margin" id="nama-header"></h4>
+                <p>On your special day, a wish from my heart,</p>
+                <p>Every dream realized, each a perfect part.</p>
+                <p>May vitality and vigor ever grace your way,</p>
+                <p>As dawn's first light heralds a radiant day.</p>
+                <p>Happy birthday, <span id="nama-content"></span>, may blessings ensue</p>
+                <p class="text-right">@v.orstarca_0</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Retrieve the name from local storage
+        var nama = localStorage.getItem('nama');
+        if (nama) {
+            // Inject the name into the appropriate elements
+            document.getElementById('nama-header').innerText = nama;
+            document.getElementById('nama-content').innerText = nama;
+        }
+    </script>
+</body>
+</html>
